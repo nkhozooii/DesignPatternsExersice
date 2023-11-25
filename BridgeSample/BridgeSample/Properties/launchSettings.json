@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BridgeSample": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "d": "ddd"
+      }
+    }
+  }
+}
