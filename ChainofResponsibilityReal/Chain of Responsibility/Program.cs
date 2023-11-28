@@ -43,8 +43,6 @@ namespace Chain_of_Responsibility
         public double Lng { get; set; }
     }
 
-
-
     public class ResponseContext
     {
         public bool IsSuccess { get; set; }
@@ -56,7 +54,7 @@ namespace Chain_of_Responsibility
         IHandler SetSuccessor(IHandler handler);
         ResponseContext Execute(RequestContext requestContext);
     }
-
+    //Handler
     public abstract class TakeATaxiHandler : IHandler
     {
 
@@ -71,7 +69,7 @@ namespace Chain_of_Responsibility
         }
     }
 
-
+    //ConCreteHandlers
     public class CreateOrder : TakeATaxiHandler
     {
         public override ResponseContext Execute(RequestContext requestContext)

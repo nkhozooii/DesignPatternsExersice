@@ -29,10 +29,10 @@ namespace Composite_UML
             //Console.ReadLine();
 
             // Create a tree structure
-            Composite root = new Composite("root");
+            Component root = new Composite("root");
             root.Add(new Leaf("Leaf A"));
             root.Add(new Leaf("Leaf B"));
-            Composite comp = new Composite("Composite X");
+            Component comp = new Composite("Composite X");
             comp.Add(new Leaf("Leaf XA"));
             comp.Add(new Leaf("Leaf XB"));
             root.Add(comp);

@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace BridgeSample.MailService
 {
+    //implementor
     public interface IMailServiceImplementor
     {
         void SendEmail(string Reciver, string Title, string Message);
     }
 
+    //concrete Implementors:
     public class GmailService : IMailServiceImplementor
     {
         public void SendEmail(string Reciver, string Title, string Message)
